@@ -7,6 +7,8 @@ import staticAdapter from '@astrojs/adapter-static';
 
 export default defineConfig({
   base: "/site/",
+  site: 'https://cherryyeditor.github.io',
+  base: 'site',
   integrations: [mdx(), sitemap(), tailwind()],
   image: {
     service: sharp,
