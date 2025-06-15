@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API, CONNECT_URL } from "../config";
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">Welcome to Clothes Editor & Face Swap Bot</div>
+    <div class="text-3xl py-3 font-bold">AI-powered transformations</div>
+    <div class="py-2">
+      <text class="text-lg">
+        This bot allows you to <b>change clothes</b> and <b>swap faces</b> in photos using advanced AI. Upload an image and
+        transform your look with ease. Perfect for fun edits, virtual try-ons, or professional mockups.
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="/tg">Go to telegram bot</a>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,24 @@
+---
+import { TG_URL } from "../config";
+
+const url = new URL(Astro.request.url);
+const ref = url.searchParams.get("ref");
+
+const redirectUrl = ref
+  ? `${TG_URL}?start=${encodeURIComponent(ref)}`
+  : TG_URL;
+
+if (Astro.redirect) {
+  Astro.redirect(redirectUrl);
+}
+---
+
+<html>
+  <head>
+    <meta http-equiv="refresh" content={`0;url=${redirectUrl}`} />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href={redirectUrl}>{redirectUrl}</a></p>
+  </body>
+</html>

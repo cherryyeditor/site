@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/TimeLine.astro";
+---
+
+<BaseLayout title="Privacy Policy" sideBarActiveItemID="privacy-policy">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Privacy Policy</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="1. General Provisions"
+      subtitle="This section covers the general terms and conditions for the collection and processing of personal data."
+    >
+      <p><strong>1.1</strong> This Privacy Policy (hereinafter referred to as the "Policy") governs the collection, processing, and protection of personal data of users (hereinafter referred to as the "User") when using the AI bot (hereinafter referred to as the "Service") for altering clothing in photographs and replacing faces.</p>
+      <p><strong>1.2</strong> By using the Service, the User confirms their acceptance of the terms of this Policy, including all provisions contained herein.</p>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="2. Data Collection and Use"
+      subtitle="This section outlines how user data is collected and used."
+    >
+      <p><strong>2.1</strong> The AI bot does not collect or store any photographs uploaded by the User, nor does it retain any generated results after processing.</p>
+      <p><strong>2.2</strong> All data transmitted through the Service is processed in real-time and is not stored on the servers or devices of the administration.</p>
+      <p><strong>2.3</strong> The User assumes full responsibility for the content of uploaded images and their compliance with applicable laws in their country of residence.</p>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="3. Data Protection"
+      subtitle="This section discusses measures taken to protect user data."
+    >
+      <p><strong>3.1</strong> The administration takes all reasonable measures to protect User data from unauthorized access, loss, or destruction.</p>
+      <p><strong>3.2</strong> However, the administration shall not be liable for any consequences arising from data breaches that occur due to circumstances beyond its control.</p>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="4. Changes to the Policy"
+      subtitle="This section details how changes to this policy will be handled."
+    >
+      <p><strong>4.1</strong> The administration reserves the right to amend this Policy without prior notice to the User; any amended version will be published on the Service's website.</p>
+      <p><strong>4.2</strong> By continuing to use the Service after amendments have been made, the User confirms their acceptance of all updated terms and conditions set forth in this Policy.</p>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Final Note"
+      subtitle="This section emphasizes that this policy is an official document."
+    >
+      <p>This Policy is executed in English and constitutes an official document between the administration of the Service and the User.</p>
+    </TimeLineElement>
+  </div>
+</BaseLayout>

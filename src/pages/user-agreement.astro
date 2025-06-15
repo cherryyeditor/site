@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/TimeLine.astro";
+---
+
+<BaseLayout title="User Agreement" sideBarActiveItemID="user-agreement">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">User Agreement</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="1. General Provisions"
+      subtitle="This section covers the general terms and conditions for using the AI bot."
+    >
+      <p><strong>1.1</strong> This User Agreement (hereinafter referred to as the "Agreement") governs the terms and conditions for the use of the AI bot (hereinafter referred to as the "Service") for altering clothing in photographs and replacing faces.</p>
+      <p><strong>1.2</strong> By using the Service, the user (hereinafter referred to as the "User") confirms their full and unconditional acceptance of the terms of this Agreement, including all provisions contained herein.</p>
+      <p><strong>1.3</strong> The User warrants that they are at least 18 years of age at the time of using the Service. The use of the Service by individuals under the age of 18 is strictly prohibited.</p>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="2. Terms of Use"
+      subtitle="This section outlines the conditions under which the Service can be used."
+    >
+      <p><strong>2.1</strong> The User is granted a limited right to use the Service solely for personal, non-commercial purposes.</p>
+      <p><strong>2.2</strong> Alterations to clothing in photographs may only be made with the prior consent of the individual depicted in the photograph, who must also be at least 18 years of age.</p>
+      <p><strong>2.3</strong> The User agrees not to use the Service for creating, distributing, or storing materials that may infringe upon third-party rights, including but not limited to copyright and rights of publicity.</p>
+      <p><strong>2.4</strong> The User assumes full responsibility for the content of uploaded images and their compliance with applicable laws in their country of residence.</p>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="3. Purchases and Refunds"
+      subtitle="This section discusses purchase policies."
+    >
+      <p><strong>3.1</strong> All purchases made through the Service are final and non-refundable. The User acknowledges that they have read and understood this policy prior to making any purchase.</p>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="4. Liability of Parties"
+      subtitle="This section discusses the liability of the Service provider and the User."
+    >
+      <p><strong>4.1</strong> The Service is provided on an "as is" basis, and the administration shall not be liable for any consequences arising from the use or inability to use the Service.</p>
+      <p><strong>4.2</strong> The User fully assumes all risks associated with using the Service, including potential legal consequences for infringing upon third-party rights or violating applicable laws in their country.</p>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="5. Compliance with Law"
+      subtitle="This section emphasizes legal responsibilities."
+    >
+      <p><strong>5.1</strong> The User agrees to use the Service in strict compliance with applicable laws in their country.</p>
+      <p><strong>5.2</strong> In case of disputes arising from the use of the Service, both parties shall endeavor to resolve them through negotiations; otherwise, disputes shall be subject to resolution in a court located at the place of business of the administration of the Service.</p>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="6. Amendments to Agreement"
+      subtitle="This section details how amendments will be handled."
+    >
+      <p><strong>6.1</strong> The administration reserves the right to amend this Agreement without prior notice or consent from the User; any amended version will be published on the Service's website.</p>
+      <p><strong>6.2</strong> By continuing to use the Service after amendments have been made, or by using it for any purpose, including but not limited to uploading images or altering them, the User confirms their acceptance of all terms and conditions set forth in this Agreement.</p>
+    </TimeLineElement>
+
+  </div>
+
+  <div class="mt-10">
+    <p>This Agreement is executed in English and constitutes an official document between the administration of the Service and the User.</p>
+  </div>
+</BaseLayout>
