@@ -6,7 +6,6 @@ import sharp from "astro/assets/services/sharp";
 
 export default defineConfig({
   site: 'https://cherryyeditor.github.io',
-  base: '/site/',
   output: 'static',
   integrations: [mdx(), sitemap(), tailwind()],
   image: {
