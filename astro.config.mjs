@@ -6,9 +6,8 @@ import sharp from "astro/assets/services/sharp";
 import staticAdapter from '@astrojs/adapter-static';
 
 export default defineConfig({
-  base: "/",
+  base: "/site/",
   integrations: [mdx(), sitemap(), tailwind()],
-  output: "static",
   image: {
     service: sharp,
   },
